@@ -1,0 +1,86 @@
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% bootstrap_messages %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="container-fluid ">
+    <div>
+
+        <h1>Data from {{databaseName}}</h1>
+    <table class="table table-hover">
+
+        <tr>
+            <th>Primary Accession</th>
+            <td colspan="3">{{primaryAccession}}</td>
+        </tr>
+        <tr>
+            <th>Secondary Accessions :</th>
+            <td colspan="3">{{secondaryAccessions}}</td>
+        </tr>
+        <tr>
+            <th>UniProtkb ID :</th>
+            <td colspan="3">{{uniProtkbId}}</td>
+        </tr>
+        <tr>
+            <th>Organism :</th>
+            <td colspan="3">Scientific Name : {{organism}} | Common Name : {{commonName}} | Taxon Id : {{taxonId}}</td>
+        </tr>
+        <tr>
+            <th>Lineage :</th>
+            <td colspan="3">{{lineage}}</td>
+        </tr>
+        <tr>
+            <th>Protein Existence :</th>
+            <td>{{proteinExistence}}</td>
+        </tr>
+        <tr>
+            <th>Protein Description :</th>
+            <td>Full Name : {{proteinDescriptionfullName}} | Evidences : Evidence Code : {{proteinDescriptionevidenceCode}} | Source : {{proteinDescriptionevidencesource}} | Id : {{proteinDescriptionevidenceid}} | Value : {{proteinDescriptionfullNamevalue}} | shortNames : {{proteinDescriptionshortNamevalue}}</td>
+        </tr>
+        <tr>
+            <th>Genes</th>
+            <td>Value : {{genevalue}} | Source : {{genes1}} | Id : {{genes1id}} | Source : {{genes2}} | Id : {{genes2id}}</td>
+        </tr>
+        <tr>
+            <th>Sequence</th>
+            <td>{{sequence}}</td>
+        </tr>
+        <tr>
+            <th>Sequence Length</th>
+            <td>{{length}}</td>
+        </tr>
+        <tr>
+            <th>Molecular Weight</th>
+            <td>{{molWeight}}</td>
+        </tr>
+        <tr>
+            <th>crc64</th>
+            <td>{{crc64}}</td>
+        </tr>
+        <tr>
+            <th>md5 Hash</th>
+            <td>{{md5}}</td>
+        </tr>
+
+    </table>
+    </div>
+
+
+</div>
+
+</body>
+<style>
+    td {
+        word-break:break-all;
+    }
+</style>
+</html>

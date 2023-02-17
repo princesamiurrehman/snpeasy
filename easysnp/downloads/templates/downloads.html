@@ -1,0 +1,169 @@
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% bootstrap_messages %}
+
+<!DOCTYPE html>
+<html>
+<body>
+<div class="container-fluid">
+    <nav class="navbar fixed-top navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand">Downloads</a>
+                <form class="d-flex btn-group">
+                    <a href="http://127.0.0.1:8000/home/"><button type="button" class="btn btn-primary" >Home</button><br></a>
+                    <a href="http://127.0.0.1:8000/downloads/"><button type="button" class="btn btn-primary" >Downloads</button></a>
+                    <a href="http://127.0.0.1:8000/contact/"><button type="button" class="btn btn-primary" >Contact</button></a>
+                </form>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <h1>API's used in the Tool Easy - SNP</h1>
+    <hr>
+    <table class="table table-hover table-responsive table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Database</th>
+      <th scope="col">api</th>
+      <th scope="col">Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>NCBI</td>
+      <td>https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?</td>
+      <td><a style="color: blue" href="https://www.ncbi.nlm.nih.gov/home/develop/api/" target="_blank">Link</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>EMBL-EBI</td>
+      <td>https://www.ebi.ac.uk/proteins/api/proteins?offset=0&size=100</td>
+      <td><a style="color: blue" href="https://www.ebi.ac.uk/proteins/api/doc/">Link</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>UniProt</td>
+      <td>https://www.uniprot.org/uniprotkb</td>
+        <td><a style="color: blue" href="https://www.uniprot.org/help/api">Link</a></td>
+    </tr>
+  <tr>
+      <th scope="row">3</th>
+      <td>UniProt</td>
+      <td>https://www.uniprot.org/uniprotkb</td>
+        <td><a style="color: blue" href="https://www.uniprot.org/help/api">Link</a></td>
+    </tr>
+  </tbody>
+</table>
+    <h1>Useful Links</h1>
+    <table class="table table-hover table-responsive table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Tool Name</th>
+      <th scope="col">link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>SIFT</td>
+      <td><a style="color: blue" href="https://sift.bii.a-star.edu.sg/www/Extended_SIFT_chr_coords_submit.htmlhttps://sift.bii.a-star.edu.sg/www/Extended_SIFT_chr_coords_submit.html" target="_blank">Link</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>PROVEAN</td>
+      <td><a style="color: blue" href="http://provean.jcvi.org/index.php">Link</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Polyphen-2</td>
+        <td><a style="color: blue" href="http://genetics.bwh.harvard.edu/pph2/bgi.shtml">Link</a></td>
+    </tr>
+  <tr>
+      <th scope="row">3</th>
+      <td>SNPs&GO</td>
+        <td><a style="color: blue" href="https://snps-and-go.biocomp.unibo.it/snps-and-go/">Link</a></td>
+    </tr>
+  <tr>
+      <th scope="row">4</th>
+      <td>I-Mutant </td>
+        <td><a style="color: blue" href="http://gpcr2.biocomp.unibo.it/cgi/predictors/I-Mutant3.0/I-Mutant3.0.cgi">Link</a></td>
+    </tr>
+  <tr>
+      <th scope="row">5</th>
+      <td>MUPro </td>
+        <td><a style="color: blue" href="http://mupro.proteomics.ics.uci.edu/">Link</a></td>
+    </tr>
+  <tr>
+      <th scope="row">6</th>
+      <td>Fathmm </td>
+        <td><a style="color: blue" href="http://fathmm.biocompute.org.uk/">Link</a></td>
+    </tr>
+  <tr>
+      <th scope="row">7</th>
+      <td>PANTHER </td>
+        <td><a style="color: blue" href="http://www.pantherdb.org/tools/csnpScoreForm.jsp">Link</a></td>
+    </tr>
+  <tr>
+      <th scope="row">8</th>
+      <td>PMut </td>
+        <td><a style="color: blue" href="http://mmb.irbbarcelona.org/PMut/">Link</a></td>
+    </tr>
+  <tr>
+      <th scope="row">9</th>
+      <td>Mutation Assessor </td>
+        <td><a style="color: blue" href="http://mutationassessor.org/">Link</a></td>
+    </tr>
+  <tr>
+      <th scope="row">10</th>
+      <td>SuSPect </td>
+        <td><a style="color: blue" href="http://www.sbg.bio.ic.ac.uk/suspect/">Link</a></td>
+    </tr>
+  <tr>
+      <th scope="row">11</th>
+      <td>LIST </td>
+        <td><a style="color: blue" href="https://list.msl.ubc.ca/">Link</a></td>
+    </tr>
+  <tr>
+      <th scope="row">12</th>
+      <td>PON-P2 </td>
+        <td><a style="color: blue" href="http://structure.bmc.lu.se/PON-P2/">Link</a></td>
+    </tr>
+  <tr>
+      <th scope="row">13</th>
+      <td>MetaSNP </td>
+        <td><a style="color: blue" href="https://snps.biofold.org/meta-snp/">Link</a></td>
+    </tr>
+  <tr>
+      <th scope="row">14</th>
+      <td>PreditSNP </td>
+        <td><a style="color: blue" href="https://loschmidt.chemi.muni.cz/predictsnp2/">Link</a></td>
+    </tr>
+  </tbody>
+</table>
+    <hr>
+    <h3>Disclaimer</h3>
+    <p>Please refer to the Links infront of the api's for the correct usage according to their privacy policy & terms and conditions</p>
+
+
+</div>
+
+
+</body>
+
+<style>
+    a:link, a:visited {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  color: deeppink;
+}
+</style>
+</html>

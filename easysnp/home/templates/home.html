@@ -1,0 +1,206 @@
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% bootstrap_messages %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<div class="container-fluid">
+    <nav class="navbar fixed-top navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand">Easy - SNP</a>
+                <form class="d-flex btn-group">
+                    <a href="http://127.0.0.1:8000/home/"><button type="button" class="btn btn-primary" >Home</button><br></a>
+                    <a href="http://127.0.0.1:8000/ncbi/"><button type="button" class="btn btn-primary" >Tool</button><br></a>
+                    <a href="http://127.0.0.1:8000/downloads/"><button type="button" class="btn btn-primary" >Downloads</button></a>
+                    <a href="http://127.0.0.1:8000/contact/"><button type="button" class="btn btn-primary" >Contact</button></a>
+                </form>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <h1>Hi Viewers!</h1>
+    <p>Easy - SNP is the tools that makes searches related to SNP easy and comfortable.</p><hr>
+    <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Database Information
+      </button>
+
+    </h2>
+
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <h6 style="display: inline">Database Name : </h6>  <p style="display: inline">{{dbnamevalue}}</p></br>
+          <h6 style="display: inline">Database Description : </h6>  <p style="display: inline">{{dbdescriptionvalue}}</p></br>
+          <h6 style="display: inline">Database Build : </h6>  <p style="display: inline">{{dbbuildvalue}}</p></br>
+          <h6 style="display: inline">Database Count : </h6>  <p style="display: inline">{{dbcountvalue}}</p></br>
+          <h6 style="display: inline">Database Last Updated : </h6>  <p style="display: inline">{{dblastupdatedvalue}}</p></br>
+      </div>
+    </div>
+
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <h6 style="display: inline">All Fields </h6> </br>
+          <h6 style="display: inline">Description : </h6>  <p style="display: inline">{{dbtermsinformationvalue1}}</p></br>
+          <h6 style="display: inline">Terms Count : </h6>  <p style="display: inline">{{dbtermsinformationvalue2}}</p></br>
+      </div>
+    </div>
+
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <h6 style="display: inline">UID : </h6> </br>
+          <h6 style="display: inline">Description : </h6>  <p style="display: inline">{{dbtermuiddescriptionvalue}}</p></br>
+      </div>
+    </div>
+
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <h6 style="display: inline">Filter</h6></br>
+          <h6 style="display: inline">Description : </h6>  <p style="display: inline">{{dbtermfilterdescriptionvalue}}</p></br>
+          <h6 style="display: inline">Filter Count</h6>  <p style="display: inline">{{dbtermfiltercount}}</p></br>
+      </div>
+    </div>
+
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <h6 style="display: inline">RS or Reference SNP ID</h6></br>
+          <h6 style="display: inline">Description : </h6>  <p style="display: inline">{{dbrsdescription}}</p></br>
+          <h6 style="display: inline">Total Count : </h6>  <p style="display: inline">{{dbrscount}}</p></br>
+      </div>
+    </div>
+
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <h6 style="display: inline">CHR or Chromosome</h6></br>
+          <h6 style="display: inline">Total Count : </h6>  <p style="display: inline">{{chrcount}}</p></br>
+      </div>
+    </div>
+
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <h6 style="display: inline">GENE</h6></br>
+          <h6 style="display: inline">Description : </h6>  <p style="display: inline">Locus Link Symbol</p></br>
+          <h6 style="display: inline">Total Count : </h6>  <p style="display: inline">{{genecount}}</p></br>
+      </div>
+    </div>
+
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <h6 style="display: inline">HAN</h6></br>
+          <h6 style="display: inline">Description : </h6>  <p style="display: inline">Submitter Handle</p></br>
+          <h6 style="display: inline">Total Count : </h6>  <p style="display: inline">{{hancount}}</p></br>
+      </div>
+    </div>
+
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <h6 style="display: inline">ACCN or Accession</h6></br>
+          <h6 style="display: inline">Description : </h6>  <p style="display: inline">Nucleotide Accessions</p></br>
+      </div>
+    </div>
+
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <h6 style="display: inline">GENE_ID</h6></br>
+          <h6 style="display: inline">Total Count : </h6>  <p style="display: inline">{{genecount}}</p></br>
+      </div>
+    </div>
+
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <h6 style="display: inline">SS or Submitter SNP ID</h6></br>
+          <h6 style="display: inline">Total Count : </h6>  <p style="display: inline">{{sscount}}</p></br>
+      </div>
+    </div>
+
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <h6 style="display: inline">VARI or Allele</h6></br>
+          <h6 style="display: inline">Total Count : </h6>  <p style="display: inline">11</p></br>
+      </div>
+    </div>
+
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <h6 style="display: inline">SCLS or SNP Class</h6></br>
+          <h6 style="display: inline">Total Count : </h6>  <p style="display: inline">5</p></br>
+      </div>
+    </div>
+
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <h6 style="display: inline">CPOS or Base Position</h6></br>
+          <h6 style="display: inline">Description : </h6><p style="display: inline">Chromosome base position</p></br>
+          <h6 style="display: inline">Total Count : </h6>  <p style="display: inline">{{cposcount}}</p></br>
+      </div>
+    </div>
+
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <h6 style="display: inline">CLIN or Clinical Significance</h6></br>
+          <h6 style="display: inline">Description : </h6><p style="display: inline">Variations with clinical effects or significances</p></br>
+          <h6 style="display: inline">Total Count : </h6>  <p style="display: inline">17</p></br>
+      </div>
+    </div>
+
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <h6 style="display: inline">GMAF or Global Minor Allele Frequency</h6></br>
+          <h6 style="display: inline">Description : </h6><p style="display: inline">Minor Allele Frequency derived from global population (ie. 1000G)</p></br>
+          <h6 style="display: inline">Total Count : </h6>  <p style="display: inline">{{gmafcount}}</p></br>
+      </div>
+    </div>
+
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <h6 style="display: inline">VALI or Validation Status</h6></br>
+          <h6 style="display: inline">Total Count : </h6>  <p style="display: inline">3</p></br>
+      </div>
+    </div>
+
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <h6 style="display: inline">ORGN or Organism</h6></br>
+          <h6 style="display: inline">Total Count : </h6>  <p style="display: inline">119</p></br>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+        </div>
+
+
+
+
+</div>
+{{information}}
+</body>
+
+<style>
+    a:link, a:visited {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  color: deeppink;
+}
+</style>
+
+</html>
+

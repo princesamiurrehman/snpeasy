@@ -1,0 +1,67 @@
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% bootstrap_messages %}
+
+
+<html>
+<body>
+<div class="container-fluid">
+    <div >
+        <table class="table table-hover table-responsive table-bordered">
+        <tr>
+            <td colspan="2" style="font-size:2em; font-weight: bold; text-align: center">DATA from NCBI</td>
+        </tr>
+        <tr>
+            <td><h6 style="display: inline">SNP_ID :</h6> {{snpId}}</td>
+        </tr>
+        <tr>
+            <td><h6 style="display: inline">GLOBAL_MAFS</h6> = STUDY : {{gmafStudy}} | FREQ : {{gmafFreq}}</td>
+        </tr>
+        <tr>
+            <td><h6 style="display: inline">GENES</h6> = NAME : {{geneName}} | GENE_ID : {{geneId}}</td>
+        </tr>
+        <tr>
+            <td><h6 style="display: inline">ACC :</h6> {{acc}}</td>
+        </tr>
+        <tr>
+            <td><h6 style="display: inline">CHR :</h6> {{chr}}</td>
+        </tr>
+        <tr>
+            <td><h6 style="display: inline">SPDI :</h6> {{spdi}}</td>
+        </tr>
+        <tr>
+            <td><h6 style="display: inline">FXN_CLASS :</h6> {{fxnclass}}</td>
+        </tr>
+        <tr>
+            <td><h6 style="display: inline">VALIDATED :</h6> {{validated}}</td>
+        </tr>
+        <tr>
+            <td colspan="2">{{docsum}}</td>
+        </tr>
+        <tr>
+            <td><h6 style="display: inline">TAX_ID :</h6> {{taxId}}</td>
+        </tr>
+        <tr>
+            <td><h6 style="display: inline">ORIG_BUILD :</h6> {{origBuild}}</td>
+        </tr>
+        <tr>
+            <td><h6 style="display: inline">ALLELE :</h6> {{alle}}</td>
+        </tr>
+        <tr>
+            <td><h6 style="display: inline">SNP_CLASS :</h6> {{snpClass}}</td>
+        </tr>
+        <tr>
+            <td><h6 style="display: inline">CHRPOS :</h6> {{chrpos}}</td>
+        </tr>
+
+    </table>
+</div>
+    </div>
+
+
+
+
+
+</body>
+</html>

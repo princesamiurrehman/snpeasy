@@ -1,0 +1,72 @@
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% bootstrap_messages %}
+{% csrf_token %}
+
+<!DOCTYPE html>
+<html>
+<body>
+<div class="container-fluid">
+    {% csrf_token %}
+    <nav class="navbar fixed-top navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand">Contact Us</a>
+                <form class="d-flex btn-group">
+                    <a href="http://127.0.0.1:8000/home/"><button type="button" class="btn btn-primary" >Home</button><br></a>
+                    <a href="http://127.0.0.1:8000/downloads/"><button type="button" class="btn btn-primary" >Downloads</button></a>
+                    <a href="http://127.0.0.1:8000/contact/"><button type="button" class="btn btn-primary" >Contact</button></a>
+                </form>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+
+    <form style="font-weight: bold" action="addrecord/" method="post" >
+
+   <div class="mb-3">
+    <label class="form-label">First Name</label>
+    <input type="text" class="form-control" name="first">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Last Name</label>
+    <input type="text" class="form-control" name="last">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Your Comments</label>
+      <textarea class="form-control" name="comments"></textarea>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="checkbox">
+    <label class="form-check-label" for="exampleCheck1">The above filled information is correct to the best of my knowledge.</label>
+  </div>
+  <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
+
+
+</form>
+
+
+</div>
+
+
+</body>
+
+<style>
+    a:link, a:visited {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  color: deeppink;
+}
+</style>
+
+</html>
